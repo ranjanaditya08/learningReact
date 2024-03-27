@@ -1,0 +1,31 @@
+{
+  "name": "learningreact",
+  "version": "1.0.0",
+  "description": "learning recat from akshay saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjanaditya08/learningReact.git"
+  },
+  "author": "Aditya Ranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjanaditya08/learningReact/issues"
+  },
+  "homepage": "https://github.com/ranjanaditya08/learningReact#readme",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "browserlist": [
+    "last 2 version"
+  ]
+}
