@@ -15,7 +15,6 @@ root.render(heading); // converts object into h1 tag
 
 */
 
-
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I'm h1 tag"),
