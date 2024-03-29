@@ -16,3 +16,5 @@
 - JSX => Babel compiles it to React.createElement => ReactElement(JS Object) => HTMLElement(render)
 - attribute in JSX is in camelCase
 
+# props
+- props are nothing but argument to a function
