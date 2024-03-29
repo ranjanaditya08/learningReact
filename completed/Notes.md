@@ -17,4 +17,15 @@
 - attribute in JSX is in camelCase
 
 # props
+
 - props are nothing but argument to a function
+
+- Two types of Exports/Imports
+
+  - Default Export/Import
+    export default Component;
+    import Component from "path";
+
+- Named Export/Import
+  export const Component;
+  import {Component} from "path"

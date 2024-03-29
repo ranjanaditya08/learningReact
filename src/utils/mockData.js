@@ -1,19 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/* 
- - Header
-    - Logo
-    - Nav items
- - Body
-    - Search
-    - Restaurent container
--Footer
-   - address
-   - copyright
-   - links
- */
-
 const restaurentData = [
   {
     info: {
@@ -31,7 +15,7 @@ const restaurentData = [
         "Keto",
         "Healthy Food",
       ],
-      avgRating: 4.6,
+      avgRating: 3.2,
       parentId: "1252",
       avgRatingString: "4.6",
       totalRatingsString: "10K+",
@@ -104,7 +88,7 @@ const restaurentData = [
       areaName: "BTM Layout",
       costForTwo: "₹450 for two",
       cuisines: ["Chinese", "Thai"],
-      avgRating: 4.4,
+      avgRating: 2.4,
       parentId: "103",
       avgRatingString: "4.4",
       totalRatingsString: "10K+",
@@ -589,86 +573,285 @@ const restaurentData = [
       type: "WEBLINK",
     },
   },
+  {
+    info: {
+      id: "42060",
+      name: "Sharief Bhai",
+      cloudinaryImageId: "d5fa59aa7394188a19da252f3cd3de61",
+      locality: "Koramangala",
+      areaName: "Koramangala",
+      costForTwo: "₹400 for two",
+      cuisines: [
+        "Biryani",
+        "Kebabs",
+        "Mughlai",
+        "Arabian",
+        "South Indian",
+        "Rolls & Wraps",
+        "Street Food",
+        "Fast Food",
+        "Desserts",
+        "Beverages",
+      ],
+      avgRating: 4.2,
+      parentId: "5734",
+      avgRatingString: "4.2",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 33,
+        lastMileTravel: 2.9,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "2.9 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-03-30 03:00:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "Rxawards/_CATEGORY-Biryani.png",
+            description: "Delivery!",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "Delivery!",
+                  imageId: "Rxawards/_CATEGORY-Biryani.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "40% OFF",
+        subHeader: "UPTO ₹80",
+        discountCalloutInfo: {
+          message: "Free Delivery",
+          logoCtx: {
+            logo: "v1655895371/free_delivery_logo_hqipbo.png",
+          },
+        },
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/sharief-bhai-koramangala-bangalore-42060",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "434304",
+      name: "Paris Panini - Gourmet Sandwiches & Wraps",
+      cloudinaryImageId: "ynfbhygvvp3z9zk0lwf1",
+      locality: "JP Nagar",
+      areaName: "JP Nagar",
+      costForTwo: "₹500 for two",
+      cuisines: [
+        "Continental",
+        "Pastas",
+        "Salads",
+        "Snacks",
+        "Desserts",
+        "Fast Food",
+        "French",
+      ],
+      avgRating: 4.5,
+      parentId: "21019",
+      avgRatingString: "4.5",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 35,
+        lastMileTravel: 4,
+        serviceability: "SERVICEABLE",
+        slaString: "35-40 mins",
+        lastMileTravelString: "4.0 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-03-29 23:30:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "Rxawards/_CATEGORY-Sandwiches.png",
+            description: "Delivery!",
+          },
+          {
+            imageId: "newg.png",
+            description: "Gourmet",
+          },
+        ],
+        textExtendedBadges: [
+          {
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "Delivery!",
+                  imageId: "Rxawards/_CATEGORY-Sandwiches.png",
+                },
+              },
+              {
+                attributes: {
+                  description: "Gourmet",
+                  imageId: "newg.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
+          },
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "40% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/paris-panini-gourmet-sandwiches-and-wraps-jp-nagar-bangalore-434304",
+      type: "WEBLINK",
+    },
+  },
+  {
+    info: {
+      id: "125956",
+      name: "Glen's Bakehouse",
+      cloudinaryImageId: "whfviizdgvwg0uwfk8dy",
+      locality: "6th Block",
+      areaName: "Koramangala",
+      costForTwo: "₹500 for two",
+      cuisines: ["Desserts", "Bakery", "Beverages", "Continental", "Italian"],
+      avgRating: 3.1,
+      parentId: "3220",
+      avgRatingString: "4.5",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 33,
+        lastMileTravel: 3.6,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "3.6 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2024-03-30 01:00:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "Rxawards/_CATEGORY-Gourmet.png",
+            description: "Delivery!",
+          },
+          {
+            imageId: "newg.png",
+            description: "Gourmet",
+          },
+        ],
+      },
+      isOpen: true,
+      aggregatedDiscountInfoV2: {},
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "Delivery!",
+                  imageId: "Rxawards/_CATEGORY-Gourmet.png",
+                },
+              },
+              {
+                attributes: {
+                  description: "Gourmet",
+                  imageId: "newg.png",
+                },
+              },
+            ],
+          },
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/glens-bakehouse-6th-block-koramangala-bangalore-125956",
+      type: "WEBLINK",
+    },
+  },
 ];
 
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://cdn3.f-cdn.com//files/download/79545571/FoodZone.jpg?fit=crop"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const RestaurentCard = (props) => {
-  const {
-    restaurentData: {
-      info: {
-        cloudinaryImageId,
-        name,
-        cuisines,
-        locality,
-        avgRating,
-        sla: { deliveryTime },
-      },
-    },
-  } = props;
-  const img_URL =
-    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-  return (
-    <div className="res-container">
-      <img src={`${img_URL}${cloudinaryImageId}`} />
-      <h2>{name}</h2>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{locality}</h4>
-      <h4>{avgRating} Stars</h4>
-      <h4>{deliveryTime} minutes</h4>
-    </div>
-  );
-};
-
-// not using keys (not acceptable) <<<<< index as a key <<<<< unique id (best practice)
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search-container">
-        <input id="search" type="text" />
-        <button>Search</button>
-      </div>
-      <div className="restaurent-container">
-        {restaurentData.map((restaurent) => {
-          return (
-            <RestaurentCard
-              key={restaurent.info.id}
-              restaurentData={restaurent}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default restaurentData;
