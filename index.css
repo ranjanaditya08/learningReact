@@ -60,3 +60,24 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shim-card {
+  height: 400px;
+  width: 300px;
+  padding: 5px;
+  background-color: #e5e1e1;
+  margin: 5px 5px;
+}
+
+.login-logout-btn {
+  margin-left: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
