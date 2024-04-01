@@ -1,0 +1,5 @@
+> What is Optional Chaining?
+
+- Optional chaining, is a feature that simplifies the process of accessing properties and methods of nested objects or arrays when intermediate properties may be null or undefined.
+
+The optional chaining operator (?.) allows you to access properties or methods without the need for explicit null or undefined checks. If any intermediate property in the chain is null or undefined, the expression short-circuits, and the result is set to undefined.
