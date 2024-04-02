@@ -20,7 +20,7 @@
 
 - props are nothing but argument to a function
 
-- Two types of Exports/Imports
+# Two types of Exports/Imports
 
   - Default Export/Import
     export default Component;
