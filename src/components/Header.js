@@ -9,7 +9,7 @@ const Header = () => {
   // if there is [] array then it will be called once
   // if there is a value inside dependency arr then it will be called each time the value is changed
   useEffect(() => {
-    console.log("useEffect called");
+    // console.log("useEffect called");
   }, []);
 
   return (

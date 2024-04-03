@@ -2,6 +2,7 @@ import RestaurentCard from "./RestaurentCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { SWIGGY_API } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 // not using keys (not acceptable) <<<<< index as a key <<<<< unique id (best practice)
 const Body = () => {
@@ -68,10 +69,12 @@ const Body = () => {
       <div className="restaurent-container">
         {filteredList.map((restaurent) => {
           return (
-            <RestaurentCard
+            <Link
               key={restaurent.info.id}
-              restaurentData={restaurent}
-            />
+              to={"/restaurent/" + restaurent.info.id}
+            >
+              <RestaurentCard restaurentData={restaurent} />
+            </Link>
           );
         })}
       </div>

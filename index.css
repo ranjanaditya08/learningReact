@@ -45,6 +45,15 @@ body {
   margin: 5px 5px;
 }
 
+a {
+  color: rgb(67, 64, 64);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(13, 12, 12);
+}
+
 .res-container:hover {
   border: 1px solid;
   cursor: pointer;
@@ -80,4 +89,10 @@ body {
   cursor: pointer;
 }
 
+.menu {
+  padding: 10px;
+}
 
+.menu ul {
+  padding: 10px 40px;
+}
