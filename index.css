@@ -96,3 +96,7 @@ a:hover {
 .menu ul {
   padding: 10px 40px;
 }
+
+.user-card {
+  border: 1px solid;
+}
