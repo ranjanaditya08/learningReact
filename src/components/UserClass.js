@@ -7,17 +7,17 @@ class UserClass extends React.Component {
       count: 0,
       count2: 2,
     };
-    console.log("child constructor");
+    // console.log("child constructor");
   }
 
   // called after rendering that's why api call are made inside it.
   componentDidMount() {
-    console.log("Child componentDidMount");
+    //console.log("Child componentDidMount");
   }
 
   render() {
     const { name, location } = this.props;
-    console.log("child render");
+    // console.log("child render");
     return (
       <div className="user-card">
         <h2>This is Namaste JavaScript Series</h2>

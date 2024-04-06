@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [btnNAme, setBtnName] = useState("Login");
+
+  const onlineStatus = useOnlineStatus();
 
   // if there is no dependency array then useEffect will be called after each render
   // if there is [] array then it will be called once
@@ -19,6 +22,7 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
+          <li>status: {onlineStatus ? "online" : "offline"}</li>
           <li>
             <Link to={"/"}>Home</Link>
           </li>
@@ -27,6 +31,9 @@ const Header = () => {
           </li>
           <li>
             <Link to={"/contacts"}>Contact US</Link>
+          </li>
+          <li>
+            <Link to={"/grocery"}>Grocery</Link>
           </li>
           <li>Cart</li>
 

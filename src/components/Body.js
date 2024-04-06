@@ -3,33 +3,30 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { SWIGGY_API } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import useRestaurentList from "../utils/useRestaurentList";
 
 // not using keys (not acceptable) <<<<< index as a key <<<<< unique id (best practice)
 const Body = () => {
   // local state variable -> super powerful variable
-  const [restaurentList, setRestaurentList] = useState([]);
-  const [filteredList, setFilteredList] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const {
+    isLoading,
+    restaurentList,
+    filteredList,
+    setFilteredList,
+    searchText,
+    setSearchText,
+  } = useRestaurentList();
 
-  const fetchData = async () => {
-    const data = await fetch(SWIGGY_API);
+  const onlineStatus = useOnlineStatus();
 
-    const json = await data.json();
-    setRestaurentList(
-      //optioal chaining
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  if (!onlineStatus)
+    return (
+      <h1>Looks like you're offline, Please check your network connection</h1>
     );
-    setFilteredList(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   // conditional rendering
-  return restaurentList.length === 0 ? (
+  return isLoading ? (
     <Shimmer />
   ) : (
     <div className="body">
